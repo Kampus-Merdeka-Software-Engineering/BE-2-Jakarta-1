@@ -22,12 +22,6 @@ app.use((req, res) => {
 // Login Routes
 app.use('/login', loginRouter);
 
-app.use((err, req, res) => {
-    res.status(500).json({
-        message: "Internal Server Error"
-    })
-})
-
 
 app.listen(port, () => {
     console.log(`Server running on port: ${PORT}`);
