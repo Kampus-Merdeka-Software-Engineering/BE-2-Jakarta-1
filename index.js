@@ -2,11 +2,14 @@ import express from "express"
 import bodyParser from "body-parser"
 import cors from "cors"
 
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = process.env.port || 3000;
 
-app.use(express.json())
+
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 
 app.use((req, res) => {
     res.status(404).json({
@@ -14,8 +17,18 @@ app.use((req, res) => {
     })
 })
 
+
+
+// Login Routes
+app.use('/login', loginRouter);
+
 app.use((err, req, res) => {
     res.status(500).json({
-        error: err.message
+        message: "Internal Server Error"
     })
+})
+
+
+app.listen(port, () => {
+    console.log(`Server running on port: ${PORT}`);
 })
