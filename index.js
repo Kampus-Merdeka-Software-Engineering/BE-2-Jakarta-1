@@ -1,7 +1,3 @@
-import express from "express"
-import bodyParser from "body-parser"
-import cors from "cors"
-
 const express = require('express');
 const app = express();
 const port = process.env.port || 3000;
@@ -24,5 +20,5 @@ app.use('/login', loginRouter);
 
 
 app.listen(port, () => {
-    console.log(`Server running on port: ${PORT}`);
+    console.log(`Server running on port: ${port}`);
 })
