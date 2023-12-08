@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.port || 3000;
+const port = 3000;
 
 
 app.use(cors());
@@ -13,7 +13,9 @@ app.use((req, res) => {
     })
 })
 
-
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
 // Login Routes
 app.use('/login', loginRouter);
