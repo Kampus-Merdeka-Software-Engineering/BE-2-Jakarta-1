@@ -1,32 +1,19 @@
 {
-<<<<<<< HEAD
   "name": "be-2-jakarta-1",
   "version": "1.0.0",
   "description": "BE-2-section-jakarta-group-1 created by GitHub Classroom",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-=======
-  "name": "be_jakarta_grup1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
->>>>>>> ff2d5242aea191aa771649c42576552ab225ae80
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "@prisma/client": "^5.7.0",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
-=======
-    "@prisma/client": "^5.6.0",
-    "bcrypt": "^5.1.1",
->>>>>>> ff2d5242aea191aa771649c42576552ab225ae80
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -39,11 +26,7 @@
     "sequelize": "^6.35.1"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "nodemon": "^3.0.2",
-=======
-    "nodemon": "3.0.2",
->>>>>>> ff2d5242aea191aa771649c42576552ab225ae80
     "prisma": "^5.7.0"
   }
 }

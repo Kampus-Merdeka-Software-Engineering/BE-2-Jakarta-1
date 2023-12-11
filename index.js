@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-const express = require('express');
-
-const app = express();
-const port = 3000;
-
-app.use(express.json());
-
-const establishConnection = require('./configurations/config')
-
-app.listen(port, () => {
-    console.log(`Server is running at ${port}`);
-});
-=======
 const { PrismaClient } = require('@prisma/client');
 require('dotenv').config();
 const cors = require('cors');
@@ -105,4 +91,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
 })
->>>>>>> ff2d5242aea191aa771649c42576552ab225ae80
