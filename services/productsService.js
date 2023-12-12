@@ -2,7 +2,7 @@ const prisma = require('config/prisma.js');
 
 async function getAllProducts() {
     try {
-        const produucts = await prisma.products.findMany();
+        const products = await prisma.products.findMany();
         return products;
     } catch (err) {
         throw err;

@@ -7,11 +7,11 @@ userRouter.post('/', userController.createUser);
 // GET - READ method
 userRouter.get('/', userController.getUser);
 // GET User By Id
-userRouter.get('/', userController.getUserById);
+userRouter.get('/userId', userController.getUserById);
 // PATCH - UPDATE method
-userRouter.patch('/', userController.updateUser);
+userRouter.patch('/userId', userController.updateUser);
 // DELETE method
-userController.delete('/', userController.deleteuser);
+userRouter.delete('/userId', userController.deleteuser);
 
 
 
