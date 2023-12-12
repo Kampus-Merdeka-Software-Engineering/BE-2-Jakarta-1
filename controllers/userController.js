@@ -84,3 +84,11 @@ async function deleteUser(req, res) {
         })
     }
 }
+
+module.exports = {
+    createUser,
+    getUser,
+    getUserById,
+    updateUser,
+    deleteUser
+}

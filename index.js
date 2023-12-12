@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true}));
 // user Routes
 app.use('/user', userRouter);
 // login Routes
-app.use('/login', loginRouter)
+app.use('/login', loginRouter);
 
 
 app.listen(port, () => {
